@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        <fragment-->
+        <!--            android:id="@+id/firstFragment"-->
+        <!--            android:name="com.padc.kotlin.ftc.creatingandstaticfragment.FragmentOne"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="150dp" />-->
+
+        <!--        <fragment-->
+        <!--            android:id="@+id/secondFragment"-->
+        <!--            android:name="com.padc.kotlin.ftc.creatingandstaticfragment.SecondFragment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="150dp"-->
+        <!--            android:layout_below="@+id/firstFragment" />-->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerFirst"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContaineSecond"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/fragmentContainerFirst" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
